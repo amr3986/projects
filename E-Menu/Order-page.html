@@ -1,0 +1,288 @@
+<!-- This website is done by: 
+Gruop-2 members: 
+
+Amr Algamal  		 (438021843)
+Anas Markhouss   (438021838)
+Mohammed Otayfah (437026114) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order page</title>
+        <style>
+html {
+    background-image: url(Images/back.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    background-color: rgba(255, 255, 255, 0.6);
+    min-width: 38rem;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;;
+    border-radius: 2rem;
+}
+
+select{
+    height: 35%;
+    border-radius: 10px;
+   padding: 2px;
+   text-align: right;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: rgb(139, 228, 186);
+    border: none;
+}
+
+
+.drinbutt{
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(58, 143, 240);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#submitbutt{
+    width: 110px;
+    height: 40px;
+    background-color:  rgb(58, 143, 240);
+    border-radius: 5px;
+    font-size: 13pt;
+    color:white;
+    font-weight: bold;
+    border: none;
+}
+.foodbutt {
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 50px;
+    height: 25px;
+    font-weight: bold;
+    background-color:  rgb(139, 228, 186);
+    border-radius: 5px;
+    border: none;
+    
+}
+/* Header starts here */
+header img {
+    max-width: 10rem;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+header span {
+    font-size: 5rem;
+    font-family: 'Monoton', cursive;
+    position: relative;
+    bottom: 2.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    width: 50%;
+    border-top: 2px solid goldenrod;
+}
+/* Header ends here */
+
+/* Main starts here */
+span {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+main hr {
+    width: 10%;
+    margin-top: 1.5rem;
+    border-top: 2px solid goldenrod;
+}
+
+.info-section label {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+#stack {
+    width: 2.5rem;
+    height: auto;
+}
+
+#pile{
+    width: 3rem;
+    height: auto;
+}
+
+input[type=number] {
+    width: 2rem;
+}
+
+.spice-section img {
+    width: 2rem;
+    height: auto;
+}
+
+#hot {
+    transform: rotate(-40deg);
+}
+
+.dishe-section label{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.drink-section label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;;
+}
+
+.flavor-section span {
+    margin-bottom: 1.5rem;
+}
+
+.flavor-section label {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.allergy-section label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;;
+}
+
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <script src="order.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1><span>E-menu</span></h1>
+            <hr>
+         
+        </header>
+
+        <main>
+            <form action="connect.php" method="POST">
+                <section class="info-section">
+                    <span>Your information</span><br><br>
+                    <label><b>First name</b></label>
+					<input type="text" placeholder="First name" name="First_name" required>
+                    
+                    <label><b>Last name</b></label>
+                    <input type="text" placeholder="Last name" name="Last_name" required>
+                
+                   <br><br>
+                    <label><b>Phone</b></label>
+                    <input type="tel" placeholder="phone no" name="Phone" pattern="05[0-9]{8}" required>
+    
+                    <label><b>E-mail  </b></label>
+                    <input type="email" placeholder="Email" name="Email">
+            
+                    <br><br>
+                   <label><b>Address</b></label>
+                    <input type="text" placeholder="street name" name="Street_name" required>
+                    
+                    <label><b>Building</b></label>
+                    <input type="text" placeholder="building number" name="Building_no" required>
+                
+                <hr>
+                <section>
+                    <span>Type of food</span><br><br>
+							<select id="foodselect" name="Food_type">
+							<option >Indian Food</option>
+							<option >SeaFood</option>
+							<option >Fast Food</option>
+							<option >Healthy Food</option>
+							<option >Arabian Food</option>
+                             </select>
+                             <input class="foodbutt" type="button" value="Ok" id="typefood" onclick="FoodType()">
+                    </section>
+                    <hr>
+                <div></div>   
+            
+                <section class="dishe-section">
+                    <span>Chose a dishe</span></label><br><br>
+                    <select id="dishes" name="Dishe_type">
+                        <option>Indian Spiced Chicken</option>
+                        <option>Tandoori Chicken</option>
+                        <option>Mughlai Biryani</option>
+                        <option>Punjabi Chickpea Curry</option>
+                        <option>Fish Curry</option>
+                    </select>
+                </section>
+                <hr>
+                <section class="spice-section">
+                    <span>What is your preferred spice level?</span><br><br>
+                    <img src="Images/chili.png" alt="not too spicy">
+                    <input type="range" min="0" max="10" value="2" name="spice_level">
+                    <img id="hot" src="Images/hot-chili.png" alt="very spicy">
+                </section>
+                <hr>
+               
+                <section class="drink-section">
+                    <label>Would you like a drinke</label><br>
+                   <input class="drinbutt" type="button" value="Yes" name="yes" id="ydrinke" onclick="drinkON()">
+                   <input class="drinbutt" type="button" value="No" name="no" id="ndrinke" onclick="drinkOFF()">
+                    
+                <div id="drink-box">
+                    <select name="Drink">
+                        <option >Cola</option>
+                        <option >pepsi</option>
+                        <option >Mirinda </option>
+                        <option >sprite</option>
+                        <option >Orange juice</option>
+                        <option >Strawberry juice</option>
+                        <option >Apple juice</option>
+                        <option >Cocktail juice juice</option>
+                        <option >Black coffee</option>
+                        <option >Latte coffee</option>
+                        <option >Espresso</option>
+                    </select>
+                </div>  
+                </section>
+                <hr>
+                <section class="flavor-section">
+                    <span>Extra flavor(s)?</span><br>
+                    <label for="sour"><input type="checkbox" name="Extra_flavor" value="Nothing">Nothing</label>
+                    <label for="salty"><input type="checkbox" name="Extra_flavor" value="salt">Salt</label>
+                    <label for="bitter"><input type="checkbox" name="Extra_flavor" value="Pepper">Pepper</label>
+                    <label for="umami"><input type="checkbox" name="Extra_flavor" value="Red chile">Red chile</label>
+                </section>
+                <hr>
+                <section class="allergy-section">
+                    <label>Any allergy? Please let us know below!</label><br>
+                    <textarea id="allergy-info" name="Allergy" rows="4" cols="60"></textarea>
+                </section>
+                <br>
+                <section class="submit-section">
+                    <button id="submitbutt" type="submit">Order</button>
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            <h3>For more information Please contact us on:920002330</h3>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,505 @@
+#main {
+	background-color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+header {
+	color: black;
+	text-align: left;
+	font-size: 98%;
+	background-color: rgb(245, 159, 46);
+	height: 6%;
+	font-family: Comic Sans MS;
+	padding-bottom: 25px;
+	border-bottom: 1px black solid;
+	position: fixed;
+    top: 0; 
+    width: 100%;
+	z-index: 1000;
+}
+
+li {
+	float: left;
+}
+
+.offer{
+	text-align: center;
+	color:red;
+	font-weight: bold;
+	font-size: 25pt;
+	margin: 0%;
+}
+
+
+li a {
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 20px;
+	display: block;
+	text-align: center;
+}
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding:5px 36px 18px 19px;
+    text-decoration: none;
+}
+
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: #4CAF50;
+	color: black;
+	border-radius: 7px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	border-radius: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#order-butt button {
+	margin-right: 4%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.generalInput {
+	width: 375px;
+	display: block;
+	border: 1px solid #999;
+	height: 25px;
+	margin-bottom: 20px;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+.box h1 {
+	margin: 0px;
+	margin-left: 20px;
+	float: left;
+	text-align: center
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	margin: 0%;
+}
+
+#link {
+	font-size: 20px;
+}
+
+.box h1:hover {
+	text-shadow: 1px 1px 2px #4169E1, 0 0 25px #4169E1, 0 0 2px #4169E1;
+}
+
+
+footer p {
+	margin-top: 0%;
+	font-size: 20px;
+}
+
+footer {
+	padding-top: 110%;
+	color: black;
+	text-align: center;
+	font-size: 120%;
+	background-color: white;
+}
+
+p.sansserif {
+	text-align: center;
+	color: black;
+	font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text {
+	padding-top: 3%;
+	font-size: 50px;
+	text-align: center;
+}
+.displayImages {
+	text-align: centre;
+	display: inline-block;
+	width: 30%;
+	height: 130%;
+	border: 1px white solid;
+	text-align: centre;
+	background-color: white; 
+	margin-left: 1%; 
+	margin-top: 1%;
+}
+
+.displayImages img {
+	margin: 4%;
+	height: 60%;
+	width: 91%;
+}
+
+img:hover {
+	box-shadow: 1px 1px 2px green, 0 0 25px green, 0 0 2px green;
+}
+
+
+#content {
+	height: 100px;
+	margin-bottom: 102%;
+}
+
+.textWithImage {
+	height: 120px;
+	padding-top: 8%;
+	padding-left: 6%;
+	margin-bottom: 10%;
+}
+
+.textWithImage h6 {
+	font-size: 24px;
+	padding-top: 1%;
+	height: 295%;
+	margin-left: 31%;
+	min-height: 4px;
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	font-style: oblique;
+}
+
+.box-cont {
+	font-size: 140%;
+	height: 100%;
+	margin: 1px;
+	display: inline-block;
+	width: 30%;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.box-cont2 {
+	font-size: 140%;
+	height: 100%;
+	margin: 1px;
+	display: inline-block;
+	width: 30%;
+	margin-top: 0px;
+	padding-top: 20%;
+}
+
+h2 {
+	padding-top: 30px;
+	color:rgb(233, 19, 19);
+	margin-left: 5%;
+	margin-top: 4%;
+	padding-left: 9%;
+}
+
+.BigLinks  {
+	display: inline-block;
+	margin: 5.8%;
+	width: 17%;
+	height: 25%;
+	margin-top: 17%;
+	margin-bottom: 1%;
+	margin-right: 1%;
+}
+
+.BigLinks img {
+	width: 200px;
+	height: 200px;
+}
+
+#outerBox1 {
+	margin-top: 50px;
+	margin-left: 4%;
+	border: 1px white solid;
+	height: 60%;
+	width: 92%;
+	background-color:#e6e6e6;
+}
+
+#outerBox {
+	border-left: 1px white solid;
+	border-right: 1px white solid;
+	height: 40%;
+	padding-left: 9%;
+}
+
+
+.innerBox {
+	text-align: centre;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	border: 1px white solid;
+	margin-top: 2%;
+	text-align: centre;
+	margin-right:5%; margin-left:5%; margin-top:0%;
+}
+
+.innerBox img {
+	margin: 4%;
+	height: 84%;
+	width: 91%;
+	
+}
+
+#pictures {
+	margin-left: 4%;
+	border: 1px white solid;
+	height: 60%;
+	width: 92%;
+	margin-bottom: 60%;
+}
+
+#container2 {
+	height: 0%;
+	margin-top: 10%;
+	text-align: center;
+}
+
+#container2 span {
+	font-size: 240%;
+}
+
+#container {
+	margin-top: 0%;
+	height: 130%;
+}
+
+#container img {
+	margin-top: 130px;
+	padding-left: 12%;
+	width: 70%;
+	height: 70%;
+	padding-bottom: 1%;
+	
+}
+
+#container img:hover {
+	box-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 2px white;
+}
+
+.textWithImage img:hover {
+	box-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 2px white;
+}
+
+.textWithImage2 img:hover {
+	box-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 2px white;
+}
+
+
+.textWithImage2 h6 {
+	font-size: 24px;
+	padding-top: 26%;
+	padding-left: 8%;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: top;
+	width: 52%;
+	font-style: oblique; 
+}
+
+.textWithImage2 img {
+	padding-left: 6%;
+	padding-top: 15%;
+	height: 330%;
+	margin: 10px;
+	display: inline-block;
+	width: 80%;
+}
+
+.textWithImage img {
+	padding-left: 6%;
+	padding-top: 1%;
+	height: 280%;
+	margin: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container select {
+	height: 39%;
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+		border: none;
+		border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+
+button:hover {
+	box-shadow: 1px 1px 2px green, 0 0 25px green, 0 0 2px green;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+img.avatar {
+	margin-top: 80px;
+    width: 74%;
+    border-radius: 50%;
+	height: 40%;
+}
+
+img.avatar:hover {
+	box-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 2px white;
+}
+
+.container {
+	margin-top: 21%;
+    padding: 1px;
+	height: 17%;
+}
+
+.container button {
+	float: left;
+	margin-left: 0%;
+	padding-left: 1%;
+	margin-top: 1%;
+}
+
+.container label {
+	float: left;
+	padding-left: 10px;
+}
+
+.container .remember {
+	margin-top: 13px;
+}
+
+.container .cancelbtn {
+	float: left;
+	margin-left: 15px;
+	margin-top: 17px;
+}
+
+.container span {
+	margin-right: 15px;
+	margin-top: 6px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	padding-bottom: 5%;
+    background-color: #fefefe;
+    margin: 5% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgb(136, 136, 136);
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+
+
+
+
+
+
+
+

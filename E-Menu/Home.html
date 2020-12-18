@@ -1,0 +1,229 @@
+<!-- This website is done by: 
+Gruop-2 members: 
+
+Amr Algamal  		 (438021843)
+Anas Markhouss   (438021838)
+Mohammed Otayfah (437026114) -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-menu</title>
+		<link rel="stylesheet" type="text/css" href="site.css">
+		<script>
+			var pict_array = ["health.jpg","fast2.png","sea.jpg","indian.jpg","arab.jpg"];
+var counter = 0;
+
+function rotatePicts() {
+	document.getElementById("rotator").src = "Images/" + pict_array[counter];
+	counter++;
+	
+	setTimeout(rotatePicts,3000);
+	if(counter == pict_array.length) { counter = 0; }
+}
+
+//array to hold the quotes
+var quote_array = [];
+var counter2 = 0;
+
+quote_array[0] = "Healthy food for healthy life";
+quote_array[1] = "fast food";
+quote_array[2] = "From the sea to your table";
+quote_array[3] = "Indian food";
+quote_array[4] = "Best arab food";
+
+//create a function
+function nextQuote() {
+	document.getElementById("message").innerHTML = quote_array[counter2];
+	counter2++;
+	
+	setTimeout(nextQuote,2950);
+	if(counter2 == quote_array.length) { counter2 = 0; }
+}
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+		</script>
+
+		
+	</head>
+	
+	<div id="main">
+		
+		<header>
+	
+		<section class="box">
+			<a href="Home.html">
+				<h1>E-menu</h1>
+			</a>
+			
+			<nav>
+				<ul>
+				<li class="dropdown">
+					<a href="Home.html" class="dropbtn">Home</a>
+				</li> 
+				
+				<li class="dropdown">
+					<a href="" class="dropbtn">Food</a>
+					<div class="dropdown-content">
+						<a href="seafood.html">Seafood</a>
+						<a href="fastfood.html">Fast food</a>
+						<a href="Indian.html">Indian food</a>
+						<a href="arab.html">Arabian food</a>
+						<a href="health.html">Healthy food</a>
+					</div>
+				</li> 
+				
+				<li class="dropdown">
+					<a href="dessert.html" class="dropbtn">Dessert</a>
+				</li>
+
+				<li class="dropdown">
+					<a href="about.html" class="dropbtn">About us</a>
+				</li>
+				</ul>
+				
+			</nav>
+
+			
+			<div id="order-butt">
+				<button onclick="window.location = 'Order-page.html';" style="width:auto;">Order</button>
+		</div>
+
+	
+		</section>
+
+		</header>
+		
+		<body onload="rotatePicts(); nextQuote();">
+		
+			<div id="container2">
+				<span id="message"></span>
+			</div>
+			
+			<section id="pictures">
+
+				<div id="container">
+					<img id="rotator" src="Images/health.jpg" alt="" />
+				</div>
+				
+				<p id="text">Offers</p>
+				
+				<h2>30% off</h2>
+				
+				<div id="outerBox">
+					<div class="innerBox">
+						<a href="seafood.html#labstor">
+							<img  src="Images/labstor.jpg" alt="Image" />
+							<nav>
+								<h1 id="link">Labstor</h1>
+							</nav>
+						</a>
+					</div>
+					
+					<div class="innerBox">
+						<a href="Indian.html#tend">
+							<img  src="Images/tendory.png" alt="Image2" />
+								
+							<nav>
+								<h1 id="link">Tandoori Chicken</h1>
+							</nav>
+						</a>
+					</div>
+					
+					<div class="innerBox">
+						<a href="arab.html#mandichik">
+							<img  src="Images/mandi chicken.jpg" alt="Image3" />
+								
+							<nav>
+								<h1 id="link">Mandi Chicken</h1>
+							</nav>
+						</a>
+					</div>
+				
+				</div>
+				
+				<h2>15% off</h2>
+				
+				<div id="outerBox">
+			
+					<div class="innerBox">
+						<a href="health.html#chic-bro">
+							<img  src="Images/chic-broccoli.jpeg" alt="Image4" />
+									
+							<nav>
+								<h1 id="link">Chicken and Broccoli</h1>
+							</nav>
+						</a>
+					</div>
+					
+					<div class="innerBox">
+						<a href="Indian.html#fishcarr">
+							<img  src="Images/fishcarry.png" alt="Image5" />
+									
+							<nav>
+								<h1 id="link">Fish Curry</h1>
+							</nav>
+						</a>
+					</div>
+					
+					<div class="innerBox">
+						<a href="fastfood.html#chikfing">
+							<img  src="Images/finger.png" alt="Image6" />
+						
+							<nav>
+								<h1 id="link" >Chicken fingers</h1>
+							</nav>
+						</a>
+					</div>
+				
+				</div>
+
+				<div>
+					
+					<p id="text">Drinkies</p>
+					
+					<a href="Home.html">
+						<div class="displayImages">
+							<img src="Images/soda.jpg" alt="ps4"/>
+							<p class="sansserif"> cold </p>
+						</div>
+					</a>
+					
+					<a href="Home.html">
+						<div class="displayImages">
+							<img src="Images/juci.jpg" alt="xbox"/>
+							<p class="sansserif"> juice </p>
+						</div>
+					</a>
+					
+					<a href="Home.html">						
+						<div class="displayImages">
+							<img src="Images/hot.jpg" alt="wii"/>
+							<p class="sansserif"> Hot </p>
+						</div>
+					</a>
+						
+				</div>
+					
+			</section>
+		
+		</body>
+		
+		<footer>
+			<hr>
+			<p>Site by Group-02 &copy: 2020</p>
+		</footer>
+		
+	</div>
+		
+	</body>
+</html>
+	
