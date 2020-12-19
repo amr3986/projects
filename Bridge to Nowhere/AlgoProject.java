@@ -7,7 +7,8 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  *
- * @author amr && Anass :D
+ * @author Anas Markhouss (438021838)
+           Amr AL Gamal (438021843)
  */
 
 public class AlgoProject {
