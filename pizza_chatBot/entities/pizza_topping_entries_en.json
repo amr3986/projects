@@ -1,0 +1,65 @@
+[
+  {
+    "value": "pepper",
+    "synonyms": [
+      "pepper"
+    ]
+  },
+  {
+    "value": "mushroom",
+    "synonyms": [
+      "mushroom",
+      "mushrooms"
+    ]
+  },
+  {
+    "value": "vegetarian",
+    "synonyms": [
+      "vegetarian",
+      "veggie"
+    ]
+  },
+  {
+    "value": "cheese",
+    "synonyms": [
+      "cheese"
+    ]
+  },
+  {
+    "value": "jalapeno",
+    "synonyms": [
+      "jalapeno",
+      "hot peppers"
+    ]
+  },
+  {
+    "value": "sausage",
+    "synonyms": [
+      "sausage"
+    ]
+  },
+  {
+    "value": "onion",
+    "synonyms": [
+      "onion"
+    ]
+  },
+  {
+    "value": "pineapple",
+    "synonyms": [
+      "pineapple"
+    ]
+  },
+  {
+    "value": "chicken",
+    "synonyms": [
+      "chicken"
+    ]
+  },
+  {
+    "value": "no topping",
+    "synonyms": [
+      "no topping"
+    ]
+  }
+]

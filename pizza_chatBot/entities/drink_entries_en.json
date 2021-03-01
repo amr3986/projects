@@ -1,0 +1,56 @@
+[
+  {
+    "value": "smoothie",
+    "synonyms": [
+      "smoothie"
+    ]
+  },
+  {
+    "value": "milkshake",
+    "synonyms": [
+      "milkshake"
+    ]
+  },
+  {
+    "value": "cola",
+    "synonyms": [
+      "cola"
+    ]
+  },
+  {
+    "value": "pepsi",
+    "synonyms": [
+      "pepsi"
+    ]
+  },
+  {
+    "value": "citrus",
+    "synonyms": [
+      "citrus"
+    ]
+  },
+  {
+    "value": "mirinda",
+    "synonyms": [
+      "mirinda"
+    ]
+  },
+  {
+    "value": "juice",
+    "synonyms": [
+      "juice"
+    ]
+  },
+  {
+    "value": "fanta",
+    "synonyms": [
+      "fanta"
+    ]
+  },
+  {
+    "value": "water",
+    "synonyms": [
+      "water"
+    ]
+  }
+]

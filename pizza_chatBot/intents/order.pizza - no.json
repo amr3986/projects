@@ -1,0 +1,39 @@
+{
+  "id": "d7e6f303-2ce8-4630-889f-cf4ba6929326",
+  "parentId": "3de1042a-ff36-40ca-89ad-e492f7cd1a96",
+  "rootParentId": "3de1042a-ff36-40ca-89ad-e492f7cd1a96",
+  "name": "order.pizza - no",
+  "auto": true,
+  "contexts": [
+    "orderpizza-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "orderpizza.orderpizza-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Got it! We\u0027ve placed your pizza order without a drink."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

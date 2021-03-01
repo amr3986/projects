@@ -1,0 +1,39 @@
+{
+  "id": "94cd9b0f-aa07-4227-9434-6f8c2336b37a",
+  "parentId": "3de1042a-ff36-40ca-89ad-e492f7cd1a96",
+  "rootParentId": "3de1042a-ff36-40ca-89ad-e492f7cd1a96",
+  "name": "order.pizza - yes",
+  "auto": true,
+  "contexts": [
+    "orderpizza-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great, what would you like? we have [ smoothie - milkshake - cola - pepsi - citrus - mirinda - juice - fanta - water]"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

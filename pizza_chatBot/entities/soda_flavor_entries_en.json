@@ -1,0 +1,32 @@
+[
+  {
+    "value": "orange",
+    "synonyms": [
+      "orange"
+    ]
+  },
+  {
+    "value": "apple",
+    "synonyms": [
+      "apple"
+    ]
+  },
+  {
+    "value": "citrus",
+    "synonyms": [
+      "citrus"
+    ]
+  },
+  {
+    "value": "strawberries",
+    "synonyms": [
+      "strawberries"
+    ]
+  },
+  {
+    "value": "diet",
+    "synonyms": [
+      "diet"
+    ]
+  }
+]

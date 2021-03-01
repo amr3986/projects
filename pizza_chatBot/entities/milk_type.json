@@ -1,0 +1,9 @@
+{
+  "id": "7f5582f0-72be-4949-9c95-706ba7f7f297",
+  "name": "milk_type",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

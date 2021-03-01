@@ -1,0 +1,39 @@
+{
+  "id": "0fce52b5-a892-4fe7-ba22-4512746f47b4",
+  "parentId": "95da715f-20f9-4642-aab5-4dc24d6fd4e8",
+  "rootParentId": "95da715f-20f9-4642-aab5-4dc24d6fd4e8",
+  "name": "opening.hours - no",
+  "auto": true,
+  "contexts": [
+    "openinghours-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "openinghours.openinghours-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "ok, see you soon :)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

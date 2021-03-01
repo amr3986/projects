@@ -1,0 +1,117 @@
+{
+  "id": "3de1042a-ff36-40ca-89ad-e492f7cd1a96",
+  "name": "order.pizza",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "#actions_intent_OPTION.OPTION",
+      "affectedContexts": [
+        {
+          "name": "orderpizza-followup",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "14400b0e-d9c1-4033-a583-668f1b0ddc92",
+          "name": "time",
+          "required": true,
+          "dataType": "@sys.time",
+          "value": "$time",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What time do you want to pick up the order?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "de725d4a-73e8-43b1-a5d8-b0034ef6d59f",
+          "name": "date",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$date",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What day do you want to pick up your order?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7dc11194-8f02-4a5e-8a2e-923030b271ec",
+          "name": "size",
+          "required": true,
+          "dataType": "@size",
+          "value": "$size",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What size pizza do you want? [ large - medium - small]"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5c2cb745-0380-43f9-aa02-bcb74d3995ec",
+          "name": "pizza_topping",
+          "required": true,
+          "dataType": "@pizza_topping",
+          "value": "$pizza_topping",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What toppings do you want on your pizza?  [ cheese - papper -  mushroom - vegetarian - jalapeno - sausage - onion - pineapple - chicken - meat -  no topping]"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great! We\u0027ve created your order for a $size pizza with $pizza_topping for pickup on $date.original at $time.original. Would you like a drink with that?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
